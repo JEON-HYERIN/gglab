@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>G.G LAB</title>
+  <!-- Google Fonts - NotoSans KR -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts - Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -12,33 +18,117 @@
   <!-- HEADER -->
   <header class="header">
     <div class="util-area">
-      <a href="#" class="link-util">Login</a>
-      <a href="#" class="link-util">Join us</a>
-      <a href="#" class="link-util">Mypage</a>
-      <a href="#" class="link-util">Cart</a>
+      <div class="common-inner">
+        <a href="#" class="link-util">Login</a>
+        <a href="#" class="link-util">Join us</a>
+        <a href="#" class="link-util">Mypage</a>
+        <a href="#" class="link-util">Cart</a>
+      </div>
     </div>
     <div class="group-logo">
-      <div class="sns-area">
-        <a href="#" class="link-sns"><i class="ico-facebook"><span class="blind"></span></i></a>
-        <a href="#" class="link-sns"><i class="ico-facebook"><span class="blind"></span></i></a>
-        <a href="#" class="link-sns"><i class="ico-facebook"><span class="blind"></span></i></a>
-        <a href="#" class="link-sns"><i class="ico-facebook"><span class="blind"></span></i></a>
+      <div class="common-inner">
+        <div class="sns-area">
+          <a href="#" class="link-sns facebook"><i class="ico-sns"><span class="blind">facebook</span></i></a>
+          <a href="#" class="link-sns naverblog"><i class="ico-sns"><span class="blind">naverblog</span></i></a>
+          <a href="#" class="link-sns instagram"><i class="ico-sns"><span class="blind">instagram</span></i></a>
+          <a href="#" class="link-sns youtube"><i class="ico-sns"><span class="blind">youtube</span></i></a>
+        </div>
+        <div class="logo-area">
+          <h1 class="logo"><a href="#"><span class="blind">G.G LAB</span></a></h1>
+        </div>
+        <div class="search-area">
+          <form action="">
+            <fieldset>
+              <legend class="blind">검색</legend>
+              <div class="search">
+                <button type="button" class="btn-search"><i class="ico-search"><span class="blind">검색</span></i></button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
-      <div class="logo-area"></div>
-      <div class="search-area"></div>
     </div>
     <nav class="gnb">
-      <ul class="gnb-list">
-        <li class="gnb-item">
-          <a href="#" class="link-gnb"></a>
-          <ul class="lnb-list">
-            <li class="lnb-item"><a href="#" class="link-lnb"></a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="common-inner">
+        <ul class="gnb-list">
+          <li class="gnb-item">
+            <a href="#" class="link-gnb">About us</a>
+            <ul class="lnb-list">
+              <li class="lnb-item"><a href="#" class="link-lnb">회사소개</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="link-gnb">Product</a>
+            <ul class="lnb-list">
+              <li class="lnb-item"><a href="#" class="link-lnb">모니터</a></li>
+              <li class="lnb-item"><a href="#" class="link-lnb">TV</a></li>
+              <li class="lnb-item"><a href="#" class="link-lnb">생활가전</a></li>
+              <li class="lnb-item"><a href="#" class="link-lnb">주변기기</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="link-gnb">Community</a>
+            <ul class="lnb-list">
+              <li class="lnb-item"><a href="#" class="link-lnb">News</a></li>
+              <li class="lnb-item"><a href="#" class="link-lnb">Event</a></li>
+              <li class="lnb-item"><a href="#" class="link-lnb">Notice</a></li>
+              <li class="lnb-item"><a href="#" class="link-lnb">Review</a></li>
+              <li class="lnb-item"><a href="#" class="link-lnb">Download</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="link-gnb">CS center</a>
+            <ul class="lnb-list">
+              <li class="lnb-item"><a href="#" class="link-lnb">FAQ</a></li>
+              <li class="lnb-item"><a href="#" class="link-lnb">A/S 및 규정</a></li>
+              <li class="lnb-item"><a href="#" class="link-lnb">A/S 문의 및 접수</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="link-gnb">Contact</a>
+            <ul class="lnb-list">
+              <li class="lnb-item"><a href="#" class="link-lnb">오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="link-gnb">Store</a>
+            <ul class="lnb-list">
+              <li class="lnb-item"><a href="#" class="link-lnb">온라인스토어</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
+  <!-- MAIN -->
+  <main id="main">
+    <!-- visual -->
+    <section class="sc-visual">
+      <h2 class="blind">메인비주얼 영역</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="thumb">
+              <img src="./assets/images/banner/main1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="thumb">
+              <img src="./assets/images/banner/main2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="thumb">
+              <img src="./assets/images/banner/main3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./assets/js/custom.js"></script>
 </body>
 </html>

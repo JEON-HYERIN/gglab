@@ -1,0 +1,140 @@
+.header {
+  .util-area {
+    background-color: #eee;
+
+    .common-inner {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .link-util {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.86;
+    color: #959595;
+
+    & + .link-util {
+      margin-left: 20px;
+    }
+  }
+  .group-logo {
+    .common-inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+    }
+  }
+  .sns-area {
+    display: flex;
+    align-items: center;
+  }
+  .link-sns {
+    display: block;
+    + .link-sns {
+      margin-left: 20px;
+    }
+    &.facebook {
+      .ico-sns {
+        background-position: 0 0;
+      }
+    }
+    &.naverblog {
+      .ico-sns {
+        background-position: -41px 0;
+      }
+    }
+    &.instagram {
+      .ico-sns {
+        background-position: -90px 0;
+      }
+    }
+    &.youtube {
+      .ico-sns {
+        background-position: -139px 0;
+      }
+    }
+  }
+  .ico-sns {
+    width: 28px;
+    height: 27px;
+    background-image: url("../images/icon/ico_sns.png");
+    background-size: 167px 27px;
+  }
+  .logo-area {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logo {
+    a {
+      display: block;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 180px;
+        height: 26px;
+        background: url("../images/content/logo.jpg") no-repeat center;
+      }
+    }
+  }
+  .search-area {}
+  .search {}
+  .btn-search {
+    cursor: pointer;
+  }
+  .ico-search {
+    width: 35px;
+    height: 35px;
+    background: url("../images/icon/ico_search.jpg") no-repeat center;
+  }
+}
+
+.gnb {
+  text-align: center;
+  padding-top: 57px;
+  .common-inner {}
+  .gnb-list {
+    display: flex;
+    justify-content: center;
+  }
+  .gnb-item {
+    position: relative;
+    & + .gnb-item {
+      margin-left: 94px;
+    }
+  }
+  .link-gnb:hover,
+  .link-lnb:hover {
+    font-weight: 700;
+    color: #d71609;
+  }
+  .link-gnb {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+  }
+  .lnb-list {
+    position: absolute;
+    display: none;
+    margin-top: 65px;
+    &.open {
+      display: block;
+    }
+  }
+  .lnb-item {
+    & + .lnb-item {
+      margin-top: 27px;
+    }
+  }
+  .link-lnb {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #a2a2a2;
+  }
+}
